@@ -1,0 +1,144 @@
+@font-face {
+	font-family: 'Blackout Midnight';
+	src: url('fonts/Blackout Midnight.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+body{
+	font-family: Helvetica, sans-serif;
+
+}
+
+h2, h3 {
+	margin-top:0;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.backgroung_dots{
+	width: 50%;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	position: absolute;
+}
+
+.silly_logo {
+	width: 25%;
+	margin-left: 5%;
+	float: left;
+}
+
+.serious{
+	float: left;
+	color: #682893;
+	margin-left: 50px;
+	margin-top: 11px;
+}
+
+.whole_wrap{
+	width: 90%;
+	margin: auto;
+	z-index: 100;
+}
+
+.button {
+	width: 50%;
+	margin: 15px auto 0 auto;
+	background: #FFFF00;
+	color: #682893;
+	font-size: 18px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+}
+
+#image_wrap {
+	margin: auto;
+	padding:20px;
+	background: #682893;
+	z-index: 100;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+
+.getsilly{
+	background: #00E6E2;
+	/*width: 100%;*/
+	margin: auto;
+	z-index: 100;
+	position: relative;
+}
+
+.sillytext{
+	color: #682893;
+	padding: 15px;
+	margin: 20px 0;
+	font-family: 'Blackout Midnight', Helvetica, sans-serif;
+	font-size: 50px;
+	letter-spacing: 2px
+}
+
+.camera{
+	padding-right:20px; 
+	margin-left: 2%;
+}
+
+.camerapic{
+	border: 1px solid #FFFF00;
+}
+
+.sillyface{
+	padding-right:20px; 
+}
+
+.sillyfacepic{
+	border: 1px solid #FFFF00;
+}
+
+.myface{
+	margin: 0;
+	
+}
+
+.silly_face{
+	position: absolute;
+}
+
+.small_logo{
+	position: relative;
+	width: 25%;
+	margin-top: 60%;
+	margin-left: 70%;
+
+}
+
+.yourface{
+	color: #FFFF00;
+	text-align: center;
+	margin: auto;
+	font-size: 22px;
+	line-height: 240px;
+	font-family: 'Blackout Midnight', Helvetica, sans-serif;
+	letter-spacing: 2px;
+	z-index: 140;
+}
+
+#results {
+	width: 320px;
+	height: 240px;
+	border: 1px solid #FFFF00;
+	z-index: 150;
+}

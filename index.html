@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Silly Selfie</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+
+	<img class="backgroung_dots clearfix" src="img/background_dots.svg"/>
+
+	<header class="header clearfix">
+		<img class="silly_logo" src="img/sillyselfie_logo.svg"/>
+		<h2 class="serious">Because...<br>Life Shouldn't Be<br>So Serious.</h2>
+	</header>
+
+	<div class="whole_wrap">
+		<div class="getsilly">
+			<h3 class="sillytext">Get Sillie.  Match the Funny Face.  Laugh.</h3>
+		</div>
+		
+		<div id="image_wrap" class="clearfix">
+
+			<div class="camera">
+				<div class="camerapic" id="my_camera"></div>
+				<div class="button" onClick="take_snapshot()">TAKE PHOTO</div>
+			</div>
+
+			<div class="sillyface">
+				<img class="sillyfacepic" src="img/sillyface_1.jpg" id="photoshow" alt="photoshow"/>
+				<div class="button" onClick="random_imglink()">NEW SILLIE FACE</div>
+			</div>
+			
+			<div class="myface">
+				<div id="results">
+					<h4 class="yourface">YOUR FACE GOES HERE</h4>
+				</div>
+			</div>
+	<!-- 		<button onclick="SaveFile('.silly_face');">Save Face</button> -->
+		</div>
+	</div>
+
+	<!-- First, include the Webcam.js JavaScript Library -->
+	<script type="text/javascript" src="../webcam.js"></script>
+	
+	<!-- Configure a few settings and attach camera -->
+	<script language="JavaScript">
+		Webcam.set({
+			width: 320,
+			height: 240,
+			image_format: 'jpeg',
+			jpeg_quality: 90,
+		});
+		Webcam.attach( '#my_camera' );
+	</script>
+		
+		
+	
+	
+	<!-- Code to handle taking the snapshot and displaying it locally -->
+	<script language="JavaScript">
+		function take_snapshot() {
+			// take snapshot and get image data
+			Webcam.snap( function(data_uri) {
+				// display results in page
+				document.getElementById('results').innerHTML = 
+					'<img class= "silly_face" src="'+data_uri+'"/>';
+			} );
+		}
+	</script>
+
+
+
+	
+		<script src="scripts.js"></script>
+	
+</body>
+</html>
